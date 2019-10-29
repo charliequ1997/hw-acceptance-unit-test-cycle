@@ -1,0 +1,7 @@
+%h2 Movie With Same Director of #{@movie_title}
+
+%u1
+  - @movie_with_same_director.each do |movie_title|
+    %li= movie_title
+
+= link_to 'Back to Home Page', movies_path
